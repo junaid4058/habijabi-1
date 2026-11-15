@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Habijabi – Everything you need, all in one place</title>
+<meta name="description" content="Habijabi is your one-stop shop for electronics, fashion, home, beauty and books.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="promo">Free delivery in Dhaka on orders over ৳3,000</div>
+<header class="top">
+  <div class="wrap bar">
+    <a class="logo" href="#" aria-label="Habijabi home">habi<span>jabi</span></a>
+    <input id="q" type="search" placeholder="Search products" aria-label="Search products">
+    <button class="cartbtn" id="openCart" aria-label="Open cart">🛒 <b id="count">0</b></button>
+  </div>
+  <nav class="wrap cats" id="cats" aria-label="Categories"></nav>
+</header>
+<section class="hero">
+  <div class="wrap">
+    <h1>Everything you need.<br>All in one place.</h1>
+    <p>Gadgets, fashion, home goods, beauty and books, delivered across Bangladesh.</p>
+    <a class="cta" href="#shop">Shop now</a>
+  </div>
+</section>
+<main class="wrap" id="shop">
+  <div class="tools">
+    <h2 id="title">All products</h2>
+    <select id="sort" aria-label="Sort products">
+      <option value="">Featured</option>
+      <option value="lh">Price: low to high</option>
+      <option value="hl">Price: high to low</option>
+      <option value="av">In stock first</option>
+    </select>
+  </div>
+  <div class="grid" id="grid"></div>
+</main>
+<section class="perks wrap">
+  <div><b>🚚 Fast delivery</b><span>2 to 3 days nationwide</span></div>
+  <div><b>💵 Cash on delivery</b><span>Pay when you receive</span></div>
+  <div><b>↩️ Easy returns</b><span>7-day return policy</span></div>
+  <div><b>💬 Real support</b><span>Chat with us on WhatsApp</span></div>
+</section>
+<footer>
+  <div class="wrap">
+    <div class="logo">habi<span>jabi</span></div>
+    <p>Dhaka, Bangladesh · hello@habijabi.com</p>
+    <small>© <span id="yr"></span> Habijabi. All rights reserved.</small>
+  </div>
+</footer>
+<div class="shade" id="shade"></div>
+<aside class="drawer" id="drawer" aria-label="Shopping cart">
+  <div class="dh"><h3>Your cart</h3><button id="closeCart" aria-label="Close cart">✕</button></div>
+  <div class="items" id="items"></div>
+  <div class="df"><div class="tot"><span>Total</span><b id="total">৳0</b></div><button class="cta full" id="checkout">Order on WhatsApp</button></div>
+</aside>
+<script src="products.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
